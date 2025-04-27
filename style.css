@@ -1,0 +1,76 @@
+/* Image styling */
+img {
+  width: 200px;
+}
+
+/* Body */
+body {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  background-color: #ffd4e7; /* Soft pink background */
+  padding: 50px 20px;
+  margin: 0;
+  overflow: visible; /* Make sure sprite is visible and not clipped */
+}
+
+/* Logo Styling */
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px; /* You can adjust the size of the logo here */
+  height: auto;
+}
+
+/* Title Styling */
+h1 {
+  color: #5f4b8b; /* Purple for the heading */
+  font-size: 3em; /* Larger font size */
+  margin-top: 100px; /* Added margin to make space for the logo */
+  margin-bottom: 20px;
+  opacity: 1; /* Title visible immediately */
+  transition: opacity 2s ease-in-out, transform 1s ease-out; /* Fade-in + subtle transform */
+}
+
+/* Add smooth hover effect to the title */
+h1:hover {
+  color: #9b4d96; /* Slightly different purple on hover */
+  transform: scale(1.1); /* Title becomes slightly bigger on hover */
+}
+
+/* Link styling */
+a {
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(255, 107, 181, 0.3); /* Soft shadow to give a bubbly effect */
+  background-color: #ff69b4; /* Soft pink for buttons */
+  padding: 10px 20px;
+  border-radius: 30px; /* Makes it round like a bubble */
+  text-decoration: none; /* Removes underline */
+  color: white; /* White text color for contrast */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for links */
+a:hover {
+  background-color: #6a1f9a; /* Darker purple on hover */
+  transform: scale(1.05); /* Slightly larger when hovered */
+  animation: pulse 1s infinite; /* Pulsing effect */
+}
+
+/* Animation for pulsing effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
